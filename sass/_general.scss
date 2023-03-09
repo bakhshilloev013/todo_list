@@ -1,0 +1,209 @@
+.navbar {
+    height: 55px;
+    width: 100%;
+    background-color: deepskyblue;
+    .navbar_items {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav__title {
+            color: #fff;
+        }
+        .right_side {
+            height: auto;
+            width: auto;
+            .theme {
+                border-radius: 5px;
+                background-color: deepskyblue;
+                border: 2px solid #fff;
+                color: #fff;
+                outline: none;
+                option {
+                    background-color: #fff;
+                    color: deepskyblue;
+                }
+            }
+            .dark_for_nav_select {
+                background-color: gray;
+                option {
+                    color: #000;
+                }
+            }
+            display: flex;
+            .sign {
+                height: auto;
+                width: 190px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 10px;
+                .dark_for_nav_btn {
+                    background-color: gray;
+                    &:hover {
+                        transition: 0.2s all;
+                        color: gray;
+                    }
+                    &:active {
+                        border-color: #fff;
+                        background-color: gray;
+                        color: #fff;
+                    }
+                }
+                button {
+                    height: 35px;
+                    width: 90px;
+                    border: 2px solid #fff;
+                    background-color: deepskyblue;
+                    color: #fff;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    &:hover {
+                        transition: 0.2s all;
+                        border: 2px solid #fff;
+                        background-color: #fff;
+                        color: deepskyblue;
+                    }
+                    &:active {
+                        background-color: deepskyblue;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.main {
+    height: 900px;
+    width: 100%;
+    .main__items {
+        min-height: 900px;
+        width: 100%;
+        padding: 20px 0;
+        .main__form {
+            height: 50px;
+            width: 100%;
+            form {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input {
+                    width: 400px;
+                    height: 40px;
+                    padding-left: 15px;
+                    margin-right: 15px;
+                    outline: none;
+                }
+                button {
+                    height: 40px;
+                    width: 90px;
+                    border-radius: 5px;
+                    border: 2px solid deepskyblue;
+                    background-color: #fff;
+                    color: deepskyblue;
+                    font-weight: 500;
+                    &:hover {
+                        background-color: deepskyblue;
+                        color: #fff;
+
+                    }                    
+                }
+                .dark_for_task_btn {
+                    border-color: gray;
+                    color: gray;
+                    &:hover {
+                        background-color: #fff;
+                        color: gray;
+                    }
+                }
+            }
+        }
+        .main__tasks {
+            min-height: 300px;
+            width: 100%;
+            margin-top: 15px;
+            // display: none;
+            .task__list {
+                // display: block;
+                min-height: auto;
+                width: 100%;
+                // border: 1px solid gray;
+                margin-top: 15px;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                .tasks__item {
+                    height: 35px;
+                    width: 100%;
+                    border: 1px solid #000;
+                    padding-left: 15px;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    .task__number {
+                        height: 25px;
+                        width: 25px;
+                        background-color: #fff;
+                        border: 2px solid deepskyblue;
+                        border-radius: 5px;
+                        color: deepskyblue;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 18px;
+                        margin-right: 10px;
+                    }
+                    .dark__task_number {
+                        border-color: gray;
+                        color: gray;
+                    }
+                    .complete {
+                        height: 25px;
+                        width: 25px;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: lightgreen;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 500;
+                        font-size: 18px;
+                        position: absolute;
+                        right: 45px;
+                    }
+                    .delete {
+                        height: 25px;
+                        width: 25px;
+                        background-color: red;
+                        color: #fff;
+                        border-radius: 5px;
+                        border: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 500;
+                        font-size: 18px;
+                        position: absolute;
+                        right: 15px;
+                    }
+                }
+                .check {
+                    text-decoration: line-through;
+                }
+                .check__off {
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+}
+.dark_for_nav {
+    background-color: gray;
+    color: #fff;
+}
